@@ -1,0 +1,129 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+  /* 1. Ẩn Navbar */
+  .navbar {
+    display: none;
+  }
+
+  /* 2. Chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 24px;
+  }
+
+  /* Overlay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+
+    /* Bình thường ẩn Overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  /* Kiểm tra xem Overlay đang hình thức hay không */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Menu drawer */
+  .menu-drawer {
+    position: fixed;
+    background-color: #10375c;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 60px;
+  }
+
+  /* Kiểm tra xem Menu drawer đang hình thức hay không */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* Menu top */
+  .close-menu {
+    width: 24px;
+    color: white;
+  }
+
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  #narbar__list--mobile {
+    margin-top: 25px;
+  }
+
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar__link:hover {
+    background-color: aquamarine;
+  }
+
+  /* Tablet & Mobile Hero */
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero__content {
+    order: 2;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  .hero__content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px auto;
+  }
+
+  .hero__row {
+    justify-content: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 768.68px) {
+}

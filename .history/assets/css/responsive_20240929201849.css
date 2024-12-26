@@ -1,0 +1,30 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+  /* 1. Ẩn Navbar */
+  .navbar {
+    display: none;
+  }
+
+  /* 2. Chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 768.68px) {
+}

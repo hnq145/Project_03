@@ -1,0 +1,52 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+  /* 1. Ẩn Navbar */
+  .navbar {
+    display: none;
+  }
+
+  /* 2. Chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 24px;
+  }
+
+  /* Overlay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+
+    /* Bình thường ẩn Overlay đi */
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Kiểm tra xem Overlay đang hình thức hay không */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 768.68px) {
+}
