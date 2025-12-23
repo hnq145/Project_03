@@ -773,3 +773,52 @@ a {
   font-size: 1.4rem;
   line-height: 1.86;
 }
+
+/* ==================== New Dynamic Styles ==================== */
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Sticky Header */
+.header-top {
+  transition: all 0.3s ease;
+}
+
+.header-top.sticky {
+  background: rgba(16, 55, 92, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  backdrop-filter: blur(10px);
+  height: 70px; /* Slightly smaller height */
+}
+
+/* Button Hover Effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(46, 128, 206, 0.4);
+  opacity: 1; /* Reset opacity change */
+}
+
+/* Card Hover Effects */
+.service-item,
+.work-item,
+.blog-item {
+  transition: all 0.3s ease;
+}
+
+.service-item:hover,
+.work-item:hover,
+.blog-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item:hover {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}

@@ -107,7 +107,7 @@
 
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="header-top">
           <!-- logo -->
@@ -125,22 +125,22 @@
             <ul class="navbar__list" id="navbar__list--pc">
               <li class="navbar__item">
                 <a
-                  href="#!"
+                  href="#home"
                   class="navbar__link navbar__link--active"
                   data-aos="fade-down"
                   >Home</a
                 >
               </li>
               <li class="navbar__item">
-                <a href="#!" class="navbar__link" data-aos="fade-down"
+                <a href="#services" class="navbar__link" data-aos="fade-down"
                   >Services</a
                 >
               </li>
               <li class="navbar__item">
-                <a href="#!" class="navbar__link" data-aos="fade-down">About</a>
+                <a href="#about" class="navbar__link" data-aos="fade-down">About</a>
               </li>
               <li class="navbar__item">
-                <a href="#!" class="navbar__link" data-aos="fade-down"
+                <a href="#doctors" class="navbar__link" data-aos="fade-down"
                   >Doctors</a
                 >
               </li>
@@ -263,12 +263,7 @@
         <ul id="navbar__list--mobile"></ul>
 
         <!-- sử dụng js để copy navbar -->
-        <script>
-          const navPC = document.querySelector("#navbar__list--pc");
-          const navMobile = document.querySelector("#navbar__list--mobile");
-          // Sao chép
-          navMobile.innerHTML = navPC.innerHTML;
-        </script>
+
 
         <!-- separate ngăn cách  -->
         <div class="separate"></div>
@@ -287,7 +282,7 @@
     <!-- main -->
     <main>
       <!-- our service -->
-      <section class="service">
+      <section class="service" id="services">
         <div class="container">
           <h2 class="service__heading section-heading" data-aos="flip-up">
             Our services
@@ -472,7 +467,7 @@
       </section>
 
       <!-- about -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about-row">
             <!-- about left -->
@@ -514,7 +509,7 @@
       </section>
 
       <!-- team -->
-      <section class="team">
+      <section class="team" id="doctors">
         <div class="container">
           <div class="team-header">
             <h2 class="section-heading" data-aos="zoom-in">
@@ -1007,5 +1002,7 @@
         duration: 700,
       });
     </script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
