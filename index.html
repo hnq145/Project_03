@@ -106,6 +106,13 @@
   </head>
 
   <body>
+    <!-- Promo Bar -->
+    <div class="promo-bar">
+      <div class="container promo-bar__inner">
+        <p class="promo-bar__text">🎉 Special Offer: Get 20% off your first checkup! Use code <strong>SMILE20</strong></p>
+        <button class="promo-bar__close">&times;</button>
+      </div>
+    </div>
     <!-- header -->
     <header class="header" id="home">
       <div class="container">
@@ -159,6 +166,11 @@
               >Sign Up</a
             >
           </div>
+          <!-- Dark Mode Toggle -->
+          <button class="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
         </div>
 
         <!-- hero -->
@@ -281,6 +293,20 @@
 
     <!-- main -->
     <main>
+      <!-- Partners -->
+      <section class="partners">
+        <div class="container">
+          <p class="partners__title">Trusted by leading companies</p>
+          <div class="partners__list">
+             <!-- Placeholder SVGs for Partners -->
+             <div class="partner-logo">Google</div>
+             <div class="partner-logo">Netflix</div>
+             <div class="partner-logo">Airbnb</div>
+             <div class="partner-logo">Uber</div>
+             <div class="partner-logo">Amazon</div>
+          </div>
+        </div>
+      </section>
       <!-- our service -->
       <section class="service" id="services">
         <div class="container">
@@ -462,6 +488,70 @@
                 >Learn More</a
               >
             </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-heading pricing__heading" data-aos="flip-up">Simple Pricing</h2>
+          <p class="section-desc pricing__desc" data-aos="flip-up">Choose the plan that fits your dental needs.</p>
+          
+          <div class="pricing__toggle" data-aos="flip-up">
+            <span class="pricing__toggle-label">Monthly</span>
+            <label class="switch">
+              <input type="checkbox" id="billing-toggle">
+              <span class="slider round"></span>
+            </label>
+            <span class="pricing__toggle-label">Annually <span class="badge">Save 20%</span></span>
+          </div>
+
+          <div class="pricing__list">
+            <!-- Basic Plan -->
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="pricing-card__title">Basic</h3>
+              <div class="pricing-card__price">
+                <span class="currency">$</span><span class="amount" data-monthly="19" data-annual="180">19</span><span class="period">/mo</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li><i class="check-icon">✓</i> 2 Checkups per year</li>
+                <li><i class="check-icon">✓</i> Basic Cleaning</li>
+                <li><i class="check-icon">✓</i> X-Ray included</li>
+              </ul>
+              <a href="#!" class="btn pricing-card__btn">Choose Plan</a>
+            </div>
+            
+            <!-- Standard Plan -->
+            <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+              <div class="pricing-card__badge">Most Popular</div>
+              <h3 class="pricing-card__title">Standard</h3>
+              <div class="pricing-card__price">
+                <span class="currency">$</span><span class="amount" data-monthly="49" data-annual="470">49</span><span class="period">/mo</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li><i class="check-icon">✓</i> 4 Checkups per year</li>
+                <li><i class="check-icon">✓</i> Deep Cleaning</li>
+                <li><i class="check-icon">✓</i> Whitening (1 session)</li>
+                <li><i class="check-icon">✓</i> Emergency Service</li>
+              </ul>
+              <a href="#!" class="btn pricing-card__btn">Choose Plan</a>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="pricing-card__title">Premium</h3>
+              <div class="pricing-card__price">
+                <span class="currency">$</span><span class="amount" data-monthly="99" data-annual="950">99</span><span class="period">/mo</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li><i class="check-icon">✓</i> Unlimited Checkups</li>
+                <li><i class="check-icon">✓</i> Full Orthodontics</li>
+                <li><i class="check-icon">✓</i> Implants Coverage</li>
+                <li><i class="check-icon">✓</i> 24/7 Support</li>
+              </ul>
+              <a href="#!" class="btn pricing-card__btn">Choose Plan</a>
+            </div>
           </div>
         </div>
       </section>
@@ -809,6 +899,101 @@
         </div>
       </section>
 
+      <!-- FAQ Section -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="section-heading faq__heading" data-aos="fade-up">Frequently Asked Questions</h2>
+          <div class="faq__list">
+            <div class="faq-item" data-aos="fade-up">
+              <div class="faq-item__question">
+                How often should I visit the dentist?
+                <span class="faq-item__icon">+</span>
+              </div>
+              <div class="faq-item__answer">
+                <p>We recommend visiting the dentist at least twice a year for a routine checkup and cleaning to maintain optimal oral health.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+              <div class="faq-item__question">
+                Do you offer emergency dental services?
+                <span class="faq-item__icon">+</span>
+              </div>
+              <div class="faq-item__answer">
+                <p>Yes, we offer 24/7 emergency dental services for severe pain, broken teeth, or other urgent issues.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+              <div class="faq-item__question">
+                What payment methods do you accept?
+                <span class="faq-item__icon">+</span>
+              </div>
+              <div class="faq-item__answer">
+                <p>We accept all major credit cards, insurance plans, and offer flexible financing options.</p>
+              </div>
+            </div>
+             <div class="faq-item" data-aos="fade-up">
+              <div class="faq-item__question">
+                Is teeth whitening safe?
+                <span class="faq-item__icon">+</span>
+              </div>
+              <div class="faq-item__answer">
+                <p>Yes, our professional teeth whitening treatments are safe and effective when performed by our certified specialists.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo Deal Countdown -->
+      <section class="promo-deal">
+        <div class="container promo-deal__inner">
+          <div class="promo-deal__content">
+             <h2 class="promo-deal__heading">Limited Time Offer!</h2>
+             <p class="promo-deal__desc">Get 50% OFF on your first Whitening Session. Hurry up!</p>
+             <a href="#!" class="btn promo-deal__btn">Claim Offer</a>
+          </div>
+          <div class="promo-deal__timer">
+             <div class="timer-box">
+                <span id="days">00</span>
+                <span class="timer-label">Days</span>
+             </div>
+             <div class="timer-box">
+                <span id="hours">00</span>
+                <span class="timer-label">Hours</span>
+             </div>
+             <div class="timer-box">
+                <span id="minutes">00</span>
+                <span class="timer-label">Mins</span>
+             </div>
+             <div class="timer-box">
+                <span id="seconds">00</span>
+                <span class="timer-label">Secs</span>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust & Certificates -->
+      <section class="trust">
+        <div class="container trust__inner">
+           <div class="trust__item" data-aos="fade-up">
+              <div class="trust__icon">🏆</div>
+              <h3 class="trust__title">Award Winning</h3>
+              <p class="trust__desc">Voted Best Dental Clinic 2024</p>
+           </div>
+           <div class="trust__item" data-aos="fade-up" data-aos-delay="100">
+              <div class="trust__icon">💯</div>
+              <h3 class="trust__title">Money-Back Guarantee</h3>
+              <p class="trust__desc">If you're not satisfied, we'll make it right.</p>
+           </div>
+           <div class="trust__item" data-aos="fade-up" data-aos-delay="200">
+              <div class="trust__icon">🛡️</div>
+              <h3 class="trust__title">Certified Professionals</h3>
+              <p class="trust__desc">All doctors are ADA certified.</p>
+           </div>
+        </div>
+      </section>
+
       <!-- appointment -->
       <section class="appointment">
         <div class="container">
@@ -973,7 +1158,7 @@
               Subscribe our newsletter for the latest update of Dental care
             </p>
 
-            <form class="footer-form" action="" data-aos="zoom-out-left">
+            <form class="footer-form" id="newsletter-form" action="" data-aos="zoom-out-left">
               <input
                 type="email"
                 class="footer-form__input"
@@ -994,6 +1179,25 @@
         </div>
       </div>
     </section>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-banner" id="cookie-banner">
+      <div class="container cookie-banner__inner">
+        <p class="cookie-banner__text">We use cookies to improve your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        <div class="cookie-banner__actions">
+          <button class="btn cookie-banner__btn cookie-banner__btn--accept">Accept</button>
+          <button class="btn cookie-banner__btn cookie-banner__btn--decline">Decline</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
 
     <!-- Animation Js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
